@@ -1,4 +1,9 @@
 # Docker
+- task: AzureWebAppContainer@1
+  inputs:
+    azureSubscription: 'Azure subscription 1 (11e3388f-0f40-489b-801c-ff228736012a)'
+    appName: 'HelloStackoverflow'
+    containers: 'HelloStackoverflow'
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
