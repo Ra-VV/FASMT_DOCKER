@@ -29,16 +29,6 @@ stages:
       displayName: Build an image
       inputs:
         command: build
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'Azure subscription 1 (11e3388f-0f40-489b-801c-ff228736012a)'
-    appType: 'webApp'
-    appName: 'HelloStackoverflow'
-    deployToSlotOrASE: true
-    resourceGroupName: 'NetworkWatcherRG'
-    slotName: 'production'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    deploymentMethod: 'auto'
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
           $(tag)
