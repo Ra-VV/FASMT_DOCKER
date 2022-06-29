@@ -1,5 +1,5 @@
 # Docker
-- task: AzureWebAppContainer@1
+task: AzureWebAppContainer@1
   inputs:
     azureSubscription: 'Azure subscription 1 (11e3388f-0f40-489b-801c-ff228736012a)'
     appName: 'HelloStackoverflow'
